@@ -71,7 +71,11 @@
                     <div class="row m-0 py-5">
                         <h5 class="text-center">I nostri volti</h5>
 
-                        <div class="row">
+
+                         <!-- Direttiva Blade, ForEach -->
+                        @foreach ($pagine_idoli as $paginaIdolo)
+
+                        <div class="container mx-auto d-flex justify-content-center">
                             <div class="col-md-4 p-3">
                               <div class="card shadow">
                                 <img class="card-img-top" src="https://picsum.photos/300" alt="Card image cap">
@@ -80,41 +84,12 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
-                                </div>
-                        </div>
+                            </div>
+                       </div>
+                     </div>
+                         @endforeach
 
-                        <div class="col-md-4 p-3">
-                        <div class="card shadow">
-                                <img class="card-img-top" src="https://picsum.photos/301" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                                </div>
-                           </div>
-
-
-                           <div class="col-md-4 p-3">
-                           <div class="card shadow">
-                                <img class="card-img-top" src="https://picsum.photos/302" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                                </div>
-                           </div>
-                        
-                        
-                        </div>
-
-                        
-
-                      
-
-
-
+                         <!-- Fine ForEach -->
 
                     </div>
 
