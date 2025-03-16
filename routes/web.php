@@ -10,19 +10,19 @@ Route::get('/', function () {
          'nome' => 'Evelyn Hugo',
          'età' => 18,
          'professione' => 'Attrice',
-         'image' => 'https://picsum.photos/301' 
+         'image' => 'https://picsum.photos/300' 
         ],
         ['id'=> 2,
          'nome' => 'Celia S.James',
          'età' => 17,
          'professione' => 'Attrice',
-         'image' => 'https://picsum.photos/302' 
+         'image' => 'https://picsum.photos/300' 
         ],
         ['id'=> 3,
          'nome' => 'Harry Cameron',
          'età' => 24,
          'professione' => 'Regista',
-         'image' => 'https://picsum.photos/303' 
+         'image' => 'https://picsum.photos/300' 
         ],
     ];
 
@@ -30,3 +30,16 @@ Route::get('/', function () {
     return view('HomeSunset.sunsetStudio', compact('pagine_idoli'));
 
 });
+
+
+Route::get('/noi', function(){
+
+
+
+
+
+    return view('HomeSunset.chiSiamo.noi');
+
+});
+
+
