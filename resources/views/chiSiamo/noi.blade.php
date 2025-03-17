@@ -72,48 +72,7 @@
 
 
 
-    <div class="row m-0 py-5">
-      
-      <div class="container mx-auto d-flex justify-content-around">
-
-      <div class="col-md-10 p-3">
-      @forelse($foto_carousel as $foto)
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-
-              <img src="{{$foto['image']}}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-
-              <img src="{{$foto['image']}}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-
-              <img src="{{$foto['image']}}" class="d-block w-100" alt="...">
-
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-
-        @empty
-
-        @endforelse
-
-
-         </div>
-      </div>
-
-    </div>
+   
 
 
 

@@ -64,25 +64,26 @@
   <main>
     <div class="row m-0">
       <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
-        <h1 class="text-center">About Us</h1>
-        <div class="col-6">
-          <p class="text-center fs-5 text-muted">Tutto su di noi</p>
-        </div>
+        <h1 class="text-center">Eccoci</h1>
+        
       </div>
     </div>
 
-
-
-
-
-
+     
     <div class="row m-0 py-5">
       
-      <div class="container mx-auto d-flex justify-content-around">
-
-     
-
+      <div class="col-md-2">
+        <img src="{{$pagina['image']}}{{$pagina['id']}}" alt="">
          </div>
+
+         <div class="col-md-10">
+            <p>nome</p>
+            <p>Biografia</p>
+          
+         </div>
+
+
+
       </div>
 
     
