@@ -32,20 +32,20 @@ Route::get('/', function () {
 });
 
 
-Route::get('/noi', function(){
+Route::get('/noi-us', function(){
 
 
 
 
 
-    return view('HomeSunset.chiSiamo.noi');
+    return view('chiSiamo.noi');
 
-});
+})->name('noi');
 
 
 
 Route::get('/pagine_idoli/detail/{id}', function($id){
         dd($id);
- });
+ })->name('paginaIdolo-detail');
 
 
