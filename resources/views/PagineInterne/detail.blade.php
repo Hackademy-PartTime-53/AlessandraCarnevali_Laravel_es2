@@ -70,14 +70,14 @@
     </div>
 
      
-    <div class="row m-0 py-5">
+    <div class="row m-0 py-5 justify-content-center">
       
-      <div class="col-md-2">
-        <img src="{{$pagina['image']}}{{$pagina['id']}}" alt="">
+      <div class="col-md-3 overflow-hidden p-3">
+        <img src="{{$pagina['image']}}{{$pagina['id']}}" alt="" class="img-fluid rounded-3">
          </div>
 
-         <div class="col-md-10">
-            <p>nome</p>
+         <div class="col-md-5 p-3 d-flex flex-column justify-content-between align-items-center">
+            <p class="text-muted">{{$pagina['nome']}}</p>
             <p>Biografia</p>
           
          </div>

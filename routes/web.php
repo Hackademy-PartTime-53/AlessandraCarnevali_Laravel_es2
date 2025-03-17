@@ -7,19 +7,19 @@ const PAGINE_IDOLI = [
      'nome' => 'Evelyn Hugo',
      'età' => 18,
      'professione' => 'Attrice',
-     'image' => 'https://picsum.photos/300' 
+     'image' => 'https://picsum.photos/200' 
     ],
     ['id'=> 2,
      'nome' => 'Celia S.James',
      'età' => 17,
      'professione' => 'Attrice',
-     'image' => 'https://picsum.photos/300' 
+     'image' => 'https://picsum.photos/200' 
     ],
     ['id'=> 3,
      'nome' => 'Harry Cameron',
      'età' => 24,
      'professione' => 'Regista',
-     'image' => 'https://picsum.photos/300' 
+     'image' => 'https://picsum.photos/200' 
     ],
 ];
 
@@ -38,7 +38,7 @@ Route::get('/noi-us', function(){
 
 
 
-    return view('chiSiamo.noi',);
+    return view('chiSiamo.noi');
 
 })->name('noi');
 
@@ -46,9 +46,6 @@ Route::get('/noi-us', function(){
 
 //PagineInterne
 Route::get('/pagine_idoli/detail/{pagina}', function($id){
-
-    
-
 
     $pagina = collect(PAGINE_IDOLI)->firstWhere('id', $id);
 
