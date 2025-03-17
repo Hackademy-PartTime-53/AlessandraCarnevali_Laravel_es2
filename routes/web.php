@@ -43,3 +43,9 @@ Route::get('/noi', function(){
 });
 
 
+
+Route::get('/pagine_idoli/detail/{id}', function($id){
+        dd($id);
+ });
+
+

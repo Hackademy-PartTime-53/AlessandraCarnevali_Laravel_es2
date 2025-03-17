@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sunset-Home</title>
+    <title>{{env('APP_NAME')}}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="">
   </head>
@@ -19,7 +19,7 @@
                         <!-- Navbar -->
                      <nav class="navbar navbar-expand-lg bg-secondary shadow">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/">SunsetStudio</a>
+                    <a class="navbar-brand" href="/">{{env('APP_NAME')}}</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -85,7 +85,7 @@
                                     <h5 class="card-title">Nome: {{$paginaIdolo['nome'] }}</h5>
                                     <p class="card-text">Anni: {{$paginaIdolo['età'] }}</p>
                                     <p class="card-text">Professione: {{$paginaIdolo['professione'] }}</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <a href="#" class="btn btn-primary">Visita</a>
                                 </div>
                             </div>
                             </div>
