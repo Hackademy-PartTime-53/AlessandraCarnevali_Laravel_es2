@@ -35,10 +35,20 @@ Route::get('/', function () {
 Route::get('/noi-us', function(){
 
 
+    $foto_carousel=[
+        [
+        'image' => 'https://picsum.photos/500'],
+      
+        
+
+
+    ];
 
 
 
-    return view('chiSiamo.noi');
+
+
+    return view('chiSiamo.noi', compact('foto_carousel'));
 
 })->name('noi');
 

@@ -73,22 +73,16 @@
 
         <div class="row m-0 py-5">
             <h5 class="text-center">I nostri volti</h5>
-
-
-
-
             <div class="container mx-auto d-flex justify-content-around">
 
                 <!-- Direttiva Blade, ForElse-->
                
-
                 @forelse($pagine_idoli as $paginaIdolo)
                 <div class="col-md-4 p-3">
                     <div class="card shadow">
                         <img src="{{$paginaIdolo['image'] }}{{$paginaIdolo['id'] }}" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Nome: {{$paginaIdolo['nome'] }}</h5>
-                            <p>Ciao</p>
                             <p class="card-text">Anni: {{$paginaIdolo['età'] }}</p>
                             <p class="card-text">Professione: {{$paginaIdolo['professione'] }}</p>
                             <a href="{{route('paginaIdolo-detail', $paginaIdolo['id']) }}" class="btn btn-primary">Visita la pagina</a>
@@ -103,18 +97,12 @@
 
                 @endforelse
 
-
-                <!-- If and Else -->
-
+                <!-- Fine If and Else -->
 
             </div>
-
-
-
-            <!-- Fine If and Else -->
+            
         </div>
-        </div>
-        </div>
+      
 
 
 
